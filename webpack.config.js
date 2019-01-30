@@ -32,4 +32,16 @@ module.exports = merge(common, {
     compress: true,
     port: 3000,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+          },
+        ],
+      },
+    ],
+  },
 })

@@ -119,6 +119,7 @@ class AppDemo extends React.Component {
       id: {
         text: 'Identifier',
         invisible: true,
+        isHidden: true,
         filterable: false,
         transform: value => `Row #${value}`,
       },
@@ -126,6 +127,7 @@ class AppDemo extends React.Component {
         text: 'Identifier',
         invisible: true,
         filterable: false,
+        isHidden: true,
         transform: value => `Row #${value + 1}`,
       },
       avatar: {
